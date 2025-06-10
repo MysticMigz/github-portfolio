@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cyber-blue: #00fff5;
+  --color-cyber-pink: #ff00ff;
+  --color-cyber-yellow: #f7f700;
+  --color-cyber-purple: #9900ff;
+  --color-cyber-dark: #0a0a0a;
+  --color-cyber-gray: #1a1a1a;
+  
+  --animate-glitch: glitch 1s infinite;
+  --animate-float: float 6s ease-in-out infinite;
+}
+
+@keyframes glitch {
+  0%, 100% { transform: translate(0); }
+  33% { transform: translate(-5px, 2px); }
+  66% { transform: translate(5px, -2px); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cyber-dark);
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
+  overflow-x: hidden;
+}
+
+.cyber-text-shadow {
+  text-shadow: 0 0 5px var(--color-cyber-blue), 0 0 10px var(--color-cyber-blue), 0 0 15px var(--color-cyber-blue);
+}
+
+.cyber-text-glow {
+  text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
+}
+
+.cyber-border-glow {
+  box-shadow: 0 0 5px var(--color-cyber-blue), 0 0 10px var(--color-cyber-blue), 0 0 15px var(--color-cyber-blue);
+}
+
+.cyber-button {
+  background: linear-gradient(45deg, var(--color-cyber-blue), var(--color-cyber-purple));
+  border: 1px solid var(--color-cyber-blue);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cyber-button:hover {
+  background: linear-gradient(45deg, var(--color-cyber-purple), var(--color-cyber-pink));
+  box-shadow: 0 0 20px var(--color-cyber-purple);
+  transform: translateY(-2px);
+}
+
+.cyber-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.cyber-button:hover::before {
+  left: 100%;
+}
+
+.cyber-grid {
+  background-image: 
+    linear-gradient(transparent 97%, rgba(0, 255, 245, 0.1) 97%), 
+    linear-gradient(90deg, transparent 97%, rgba(0, 255, 245, 0.1) 97%);
+  background-size: 20px 20px;
+}
+
+.cyber-gradient-text {
+  background: linear-gradient(45deg, var(--color-cyber-blue), var(--color-cyber-pink), var(--color-cyber-purple));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skill-bar {
+  background: rgba(26, 26, 26, 0.8);
+  border: 1px solid var(--color-cyber-blue);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.skill-bar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-cyber-blue), var(--color-cyber-purple));
+  transition: width 2s ease-in-out;
+  border-radius: 0.5rem;
+}
+
+.skill-bar[data-level="90"]::before { width: 90%; }
+.skill-bar[data-level="85"]::before { width: 85%; }
+.skill-bar[data-level="80"]::before { width: 80%; }
+.skill-bar[data-level="75"]::before { width: 75%; }
+.skill-bar[data-level="70"]::before { width: 70%; }
+
+.neon-border {
+  border: 1px solid var(--color-cyber-blue);
+  box-shadow: 
+    0 0 5px var(--color-cyber-blue),
+    inset 0 0 5px var(--color-cyber-blue);
+}
+
+.neon-border:hover {
+  box-shadow: 
+    0 0 10px var(--color-cyber-blue),
+    0 0 20px var(--color-cyber-blue),
+    inset 0 0 10px var(--color-cyber-blue);
+}
+
+@media (max-width: 768px) {
+  .cyber-text-shadow {
+    text-shadow: 0 0 3px var(--color-cyber-blue);
+  }
+}
