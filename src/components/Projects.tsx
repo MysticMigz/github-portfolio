@@ -55,6 +55,19 @@ const Projects = () => {
       images: lauraEmpowerFitImages
     },
     {
+      title: "Flag Game",
+      description: "An interactive geography quiz game where players guess countries by their flags. Features multiple difficulty levels, scoring system, and educational content to help users learn about world flags and countries. Built as a native Android application.",
+      tech: ["Kotlin", "Android Studio", "Android SDK", "XML Layouts", "Material Design"],
+      status: "DEPLOYED",
+      video: "/videos/FlagGame.mp4"
+    },
+    {
+      title: "Game AI Environment",
+      description: "An intelligent game environment featuring AI-driven gameplay mechanics, adaptive difficulty systems, and machine learning algorithms. Demonstrates advanced AI implementation in interactive gaming scenarios with real-time decision making and player behavior analysis.",
+      tech: ["Python", "TensorFlow", "Unity", "C#", "Machine Learning", "Neural Networks"],
+      status: "ACTIVE"
+    },
+    {
       title: "Cyber Security Suite",
       description: "Comprehensive security monitoring tool with real-time threat detection.",
       tech: ["Python", "React", "MongoDB", "Machine Learning"],
@@ -109,7 +122,7 @@ const Projects = () => {
                     {project.tech.map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className="px-3 py-1 bg-cyber-gray border border-cyber-purple text-cyber-purple text-sm rounded"
+                        className="px-3 py-1 bg-cyber-gray border border-sky-400 text-sky-400 text-sm rounded"
                       >
                         {tech}
                       </span>
@@ -132,12 +145,64 @@ const Projects = () => {
                         Live Demo
                       </Link>
                     )}
+                    {project.title === "Flag Game" && (
+                      <Link 
+                        href="https://github.com/MysticMigz/FootballApp"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cyber-button text-sm"
+                        style={{
+                          borderColor: '#00fff5',
+                          color: '#00fff5',
+                          boxShadow: '0 0 10px #00fff5',
+                        }}
+                      >
+                        View Code
+                      </Link>
+                    )}
+                    {project.title === "Game AI Environment" && (
+                      <Link 
+                        href="https://youtu.be/uKjFemZoi28"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cyber-button text-sm"
+                        style={{
+                          borderColor: '#9900ff',
+                          color: '#9900ff',
+                          boxShadow: '0 0 10px #9900ff',
+                        }}
+                      >
+                        Watch Demo
+                      </Link>
+                    )}
                   </div>
                 </div>
 
                 <div className="lg:w-1/2">
                   {project.images && (
                     <Carousel images={project.images} autoPlayInterval={5000} />
+                  )}
+                  {project.video && (
+                    <div className="relative w-full pt-[56.25%] rounded-lg overflow-hidden border-2 border-cyber-blue/50">
+                      <video
+                        controls
+                        loop
+                        muted
+                        playsInline
+                        className="absolute top-0 left-0 w-full h-full object-cover"
+                        style={{
+                          background: 'var(--color-cyber-dark)',
+                        }}
+                      >
+                        <source src={project.video} type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                      
+                      {/* Cyberpunk overlay effects - reduced opacity so controls are visible */}
+                      <div className="absolute inset-0 bg-cyber-dark/10 pointer-events-none" />
+                      <div className="absolute inset-0 cyber-grid opacity-5 pointer-events-none" />
+                      <div className="absolute inset-0 border border-cyber-blue/50 rounded-lg animate-pulse pointer-events-none" />
+                    </div>
                   )}
                 </div>
               </div>

@@ -13,7 +13,7 @@ const Hero = () => {
           className="text-6xl md:text-8xl font-bold mb-4 cyber-glitch"
         >
           <span className="text-cyber-blue">SOFTWARE</span>
-          <span className="text-cyber-pink">ENGINEER</span>
+          <span className="text-cyber-pink"> ENGINEER / DEVELOPER</span>
         </motion.h1>
         
         <motion.p

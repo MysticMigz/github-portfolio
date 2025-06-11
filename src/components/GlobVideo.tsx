@@ -36,6 +36,8 @@ const GlobVideo = () => {
 
       {/* Animated border glow */}
       <div className="absolute inset-0 rounded-lg border-2 border-cyber-purple/50 animate-pulse" />
+
+
     </div>
   );
 };

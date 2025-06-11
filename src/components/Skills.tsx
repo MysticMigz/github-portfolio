@@ -95,13 +95,13 @@ const Skills = () => {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <h3 className="text-2xl font-bold text-cyber-purple mb-8">Tech Stack</h3>
+          <h3 className="text-2xl font-bold text-sky-400 mb-8">Tech Stack</h3>
           <div className="flex flex-wrap justify-center gap-6">
             {['React', 'Next.js', 'Node.js', 'Python', 'TypeScript', 'AWS', 'Docker', 'PostgreSQL'].map((tech, index) => (
               <motion.div
                 key={index}
                 whileHover={{ scale: 1.1, rotate: 5 }}
-                className="w-16 h-16 bg-cyber-dark border-2 border-cyber-purple rounded-lg flex items-center justify-center text-cyber-purple font-bold text-xs"
+                className="w-16 h-16 bg-cyber-dark border-2 border-sky-400 rounded-lg flex items-center justify-center text-sky-400 font-bold text-xs"
               >
                 {tech}
               </motion.div>

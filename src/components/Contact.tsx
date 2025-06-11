@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
+import GlobVideo from './GlobVideo';
 
 const Contact = () => {
   return (
-    <section id="contact" className="min-h-screen py-20 px-4">
+    <section id="contact" className="min-h-screen py-20 px-4 relative">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -106,6 +107,19 @@ const Contact = () => {
                 </motion.div>
               </Link>
             </div>
+
+            {/* Globe Video underneath the links */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1, delay: 0.8 }}
+              viewport={{ once: true }}
+              className="mt-8"
+            >
+              <div className="relative w-full h-80">
+                <GlobVideo />
+              </div>
+            </motion.div>
           </motion.div>
 
           {/* Contact Form */}
@@ -180,6 +194,8 @@ const Contact = () => {
           </p>
         </motion.div>
       </div>
+
+
     </section>
   );
 };
