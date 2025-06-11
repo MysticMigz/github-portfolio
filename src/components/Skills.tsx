@@ -25,7 +25,7 @@ const Skills = () => {
     {
       title: "DevOps & Tools",
       skills: [
-        { name: "Docker", level: 80 },
+        { name: "Kotlin", level: 80 },
         { name: "AWS", level: 75 },
         { name: "Git", level: 95 },
         { name: "Linux", level: 85 },

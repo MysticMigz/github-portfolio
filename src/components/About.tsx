@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import GlobVideo from './GlobVideo';
 
 const About = () => {
   return (
@@ -23,18 +24,18 @@ const About = () => {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <h3 className="text-3xl font-bold text-cyber-blue mb-4">Digital Architect</h3>
+            <h3 className="text-3xl font-bold text-cyber-blue mb-4">Digital Architect / Software Engineer</h3>
             <p className="text-gray-300 text-lg leading-relaxed">
-              I'm a passionate full-stack developer who thrives in the digital realm. 
-              With expertise spanning from frontend interfaces to backend architectures, 
-              I craft digital experiences that push the boundaries of what's possible.
+              Hi, I’m Miguel Silva — a passionate and detail-driven professional dedicated to building meaningful digital experiences.
+              With a strong foundation in Mobile App Development, e.g., software development, UI/UX design, digital marketing, I specialize in turning complex ideas into clean, functional, and impactful solutions.
+              I thrive on solving problems, learning new technologies, and collaborating with others to create work that not only performs well but also inspires.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
-              My journey through the cyberpunk landscape of modern web development 
-              has equipped me with cutting-edge skills in React, Next.js, Node.js, 
-              and emerging technologies that shape tomorrow's web.
+              Whether it's developing scalable applications, designing intuitive interfaces, or crafting effective strategies, 
+              I bring creativity, precision, and a deep commitment to quality to everything I do.
+              Let’s connect and create something remarkable together!
             </p>
-            <div className="flex flex-wrap gap-4 mt-8">
+            <div className="flex flex-wrap gap-4">
               <span className="px-4 py-2 bg-cyber-dark border border-cyber-blue text-cyber-blue text-sm">
                 Problem Solver
               </span>
@@ -54,16 +55,7 @@ const About = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="w-80 h-80 mx-auto relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-cyber-blue/20 to-cyber-pink/20 rounded-lg"></div>
-              <div className="absolute inset-2 bg-cyber-dark border-2 border-cyber-blue rounded-lg flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-32 h-32 bg-gradient-to-br from-cyber-blue to-cyber-pink rounded-full mx-auto mb-4"></div>
-                  <h4 className="text-cyber-blue text-xl font-bold">Profile.jpg</h4>
-                  <p className="text-gray-400 text-sm mt-2">// Add your image here</p>
-                </div>
-              </div>
-            </div>
+            <GlobVideo />
           </motion.div>
         </div>
       </div>

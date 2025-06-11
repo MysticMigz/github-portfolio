@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const Contact = () => {
   return (
@@ -34,44 +36,75 @@ const Contact = () => {
             </div>
 
             <div className="space-y-6">
-              <motion.div
-                whileHover={{ x: 10 }}
-                className="flex items-center space-x-4 p-4 bg-cyber-dark/80 border border-cyber-blue/50 rounded-lg backdrop-blur-sm"
+              <Link 
+                href="mailto:your.email@cyberpunk.dev"
+                className="block transition-transform duration-300 hover:scale-[1.02]"
               >
-                <div className="w-12 h-12 bg-cyber-blue/20 rounded-lg flex items-center justify-center">
-                  <span className="text-cyber-blue text-xl">📧</span>
-                </div>
-                <div>
-                  <h4 className="text-cyber-blue font-semibold">Email</h4>
-                  <p className="text-gray-300">your.email@cyberpunk.dev</p>
-                </div>
-              </motion.div>
+                <motion.div
+                  whileHover={{ x: 10 }}
+                  className="flex items-center space-x-4 p-4 bg-cyber-dark/80 border border-cyber-blue/50 rounded-lg backdrop-blur-sm hover:border-cyber-blue hover:shadow-lg hover:shadow-cyber-blue/20"
+                >
+                  <div className="w-12 h-12 bg-cyber-blue/20 rounded-lg flex items-center justify-center">
+                    <span className="text-cyber-blue text-xl">📧</span>
+                  </div>
+                  <div>
+                    <h4 className="text-cyber-blue font-semibold">Email</h4>
+                    <p className="text-gray-300">miguelangelosilva@hotmail.co.uk</p>
+                  </div>
+                </motion.div>
+              </Link>
 
-              <motion.div
-                whileHover={{ x: 10 }}
-                className="flex items-center space-x-4 p-4 bg-cyber-dark/80 border border-cyber-pink/50 rounded-lg backdrop-blur-sm"
+              <Link 
+                href="https://www.linkedin.com/in/miguelangelosilva123/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block transition-transform duration-300 hover:scale-[1.02]"
               >
-                <div className="w-12 h-12 bg-cyber-pink/20 rounded-lg flex items-center justify-center">
-                  <span className="text-cyber-pink text-xl">🔗</span>
-                </div>
-                <div>
-                  <h4 className="text-cyber-pink font-semibold">LinkedIn</h4>
-                  <p className="text-gray-300">linkedin.com/in/yourprofile</p>
-                </div>
-              </motion.div>
+                <motion.div
+                  whileHover={{ x: 10 }}
+                  className="flex items-center space-x-4 p-4 bg-cyber-dark/80 border border-cyber-pink/50 rounded-lg backdrop-blur-sm hover:border-cyber-pink hover:shadow-lg hover:shadow-cyber-pink/20"
+                >
+                  <div className="w-12 h-12 bg-cyber-pink/20 rounded-lg flex items-center justify-center">
+                    <Image
+                      src="/images/icons8-linkedin-64.png"
+                      alt="LinkedIn"
+                      width={32}
+                      height={32}
+                      className="text-cyber-pink"
+                    />
+                  </div>
+                  <div>
+                    <h4 className="text-cyber-pink font-semibold">LinkedIn</h4>
+                    <p className="text-gray-300">linkedin.com/in/miguelangelosilva123</p>
+                  </div>
+                </motion.div>
+              </Link>
 
-              <motion.div
-                whileHover={{ x: 10 }}
-                className="flex items-center space-x-4 p-4 bg-cyber-dark/80 border border-cyber-purple/50 rounded-lg backdrop-blur-sm"
+              <Link 
+                href="https://github.com/yourUsername"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block transition-transform duration-300 hover:scale-[1.02]"
               >
-                <div className="w-12 h-12 bg-cyber-purple/20 rounded-lg flex items-center justify-center">
-                  <span className="text-cyber-purple text-xl">🐙</span>
-                </div>
-                <div>
-                  <h4 className="text-cyber-purple font-semibold">GitHub</h4>
-                  <p className="text-gray-300">github.com/yourUsername</p>
-                </div>
-              </motion.div>
+                <motion.div
+                  whileHover={{ x: 10 }}
+                  className="flex items-center space-x-4 p-4 bg-cyber-dark/80 border border-cyber-purple/50 rounded-lg backdrop-blur-sm hover:border-cyber-purple hover:shadow-lg hover:shadow-cyber-purple/20"
+                >
+                  <div className="w-12 h-12 bg-cyber-purple/20 rounded-lg flex items-center justify-center">
+                    <Image
+                      src="/images/github.png"
+                      alt="GitHub"
+                      width={32}
+                      height={32}
+                      className="text-cyber-purple"
+                    />
+                  </div>
+                  <div>
+                    <h4 className="text-cyber-purple font-semibold">GitHub</h4>
+                    <p className="text-gray-300">github.com/yourUsername</p>
+                  </div>
+                </motion.div>
+              </Link>
             </div>
           </motion.div>
 

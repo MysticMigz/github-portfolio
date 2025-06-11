@@ -28,7 +28,7 @@ const VideoBackground = () => {
       <div className="absolute inset-0 bg-cyber-dark/50" /> {/* Dark overlay */}
       
       {/* Cyberpunk grid effect */}
-      <div className="absolute inset-0 cyber-grid-bg opacity-10" />
+      <div className="absolute inset-0 cyber-grid opacity-10" />
 
       {/* Glitch lines */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-cyber-blue/3 to-transparent opacity-30" />
