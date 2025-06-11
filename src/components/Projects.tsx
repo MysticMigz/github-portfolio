@@ -4,35 +4,39 @@ import Link from 'next/link';
 
 const Projects = () => {
   const patchPayImages = [
-    '/images/projects/Screenshot 2025-05-04 114222.png',
-    '/images/projects/Screenshot 2025-05-04 114239.png',
-    '/images/projects/Screenshot 2025-05-04 114613.png',
-    '/images/projects/Screenshot 2025-05-04 115401.png',
-    '/images/projects/Screenshot 2025-05-04 115527.png',
-    '/images/projects/Screenshot 2025-05-04 115601.png',
-    '/images/projects/Screenshot 2025-05-04 115726.png',
-    '/images/projects/Screenshot 2025-05-04 115825.png',
-    '/images/projects/Screenshot 2025-05-04 121658.png',
-    '/images/projects/Screenshot 2025-05-04 121750.png',
-    '/images/projects/Screenshot 2025-05-04 121811.png',
-    '/images/projects/Screenshot 2025-05-04 122012.png',
-    '/images/projects/Screenshot 2025-05-04 122040.png',
-    '/images/projects/Screenshot 2025-05-04 122923.png',
-    '/images/projects/Screenshot 2025-05-04 123136.png',
-    '/images/projects/Screenshot 2025-05-04 123239.png',
-    '/images/projects/Screenshot 2025-05-04 123301.png',
-    '/images/projects/Screenshot 2025-05-04 123339.png',
-    '/images/projects/Screenshot 2025-05-04 123605.png',
-    '/images/projects/Screenshot 2025-05-04 123855.png',
-    '/images/projects/Screenshot 2025-05-04 203814.png',
-    '/images/projects/Screenshot 2025-05-04 213812.png',
-    '/images/projects/Screenshot 2025-05-04 220021.png',
-    '/images/projects/Screenshot 2025-05-04 221536.png',
-    '/images/projects/Screenshot 2025-05-05 195926.png',
-    '/images/projects/Screenshot 2025-05-05 200016.png',
-    '/images/projects/Screenshot 2025-05-05 214349.png',
-    '/images/projects/Screenshot 2025-05-06 003818.png',
-    '/images/projects/Screenshot 2025-05-07 094007.png'
+    '/images/project1/Screenshot 2025-05-04 114222.png',
+    '/images/project1/Screenshot 2025-05-04 114239.png',
+    '/images/project1/Screenshot 2025-05-04 114613.png',
+    '/images/project1/Screenshot 2025-05-04 115401.png',
+    '/images/project1/Screenshot 2025-05-04 115527.png',
+    '/images/project1/Screenshot 2025-05-04 115601.png',
+    '/images/project1/Screenshot 2025-05-04 115726.png',
+    '/images/project1/Screenshot 2025-05-04 115825.png',
+    '/images/project1/Screenshot 2025-05-04 121658.png',
+    '/images/project1/Screenshot 2025-05-04 121750.png',
+    '/images/project1/Screenshot 2025-05-04 121811.png',
+    '/images/project1/Screenshot 2025-05-04 122012.png',
+    '/images/project1/Screenshot 2025-05-04 122040.png',
+    '/images/project1/Screenshot 2025-05-04 122923.png',
+    '/images/project1/Screenshot 2025-05-04 123136.png',
+    '/images/project1/Screenshot 2025-05-04 123239.png',
+    '/images/project1/Screenshot 2025-05-04 123301.png',
+    '/images/project1/Screenshot 2025-05-04 123339.png',
+    '/images/project1/Screenshot 2025-05-04 123605.png',
+    '/images/project1/Screenshot 2025-05-04 123855.png',
+    '/images/project1/Screenshot 2025-05-04 203814.png',
+    '/images/project1/Screenshot 2025-05-04 213812.png',
+    '/images/project1/Screenshot 2025-05-04 220021.png',
+    '/images/project1/Screenshot 2025-05-04 221536.png',
+    '/images/project1/Screenshot 2025-05-05 195926.png',
+    '/images/project1/Screenshot 2025-05-05 200016.png',
+    '/images/project1/Screenshot 2025-05-05 214349.png',
+    '/images/project1/Screenshot 2025-05-06 003818.png',
+    '/images/project1/Screenshot 2025-05-07 094007.png'
+  ];
+
+  const lauraEmpowerFitImages = [
+    '/images/project2/laura.png'
   ];
 
   const projects = [
@@ -44,10 +48,11 @@ const Projects = () => {
       images: patchPayImages
     },
     {
-      title: "Quantum Commerce Platform",
-      description: "E-commerce platform with advanced encryption and blockchain integration.",
-      tech: ["TypeScript", "Node.js", "PostgreSQL", "Blockchain"],
-      status: "DEPLOYED"
+      title: "Laura Empower Fit",
+      description: "A modern fitness and personal training website featuring responsive design, interactive carousel components, and professional branding. Built with clean UI/UX principles for optimal user engagement.",
+      tech: ["React", "Next.js", "Tailwind CSS", "Responsive Design", "UI/UX"],
+      status: "DEPLOYED",
+      images: lauraEmpowerFitImages
     },
     {
       title: "Cyber Security Suite",

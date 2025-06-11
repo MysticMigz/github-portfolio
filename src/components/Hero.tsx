@@ -23,7 +23,7 @@ const Hero = () => {
           className="text-xl md:text-2xl text-gray-300 mb-8"
           style={{ textShadow: '0 0 8px rgba(255,255,255,0.5)' }}
         >
-          Full-Stack Developer // Digital Artist // Cyberpunk Enthusiast
+          Full-Stack Developer // Digital Artist // Digital Architect
         </motion.p>
 
         {/* Small hero video */}

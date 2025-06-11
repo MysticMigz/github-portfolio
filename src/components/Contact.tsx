@@ -81,7 +81,7 @@ const Contact = () => {
               </Link>
 
               <Link 
-                href="https://github.com/yourUsername"
+                href="https://github.com/MysticMigz"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block transition-transform duration-300 hover:scale-[1.02]"
@@ -101,7 +101,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="text-cyber-purple font-semibold">GitHub</h4>
-                    <p className="text-gray-300">github.com/yourUsername</p>
+                    <p className="text-gray-300">https://github.com/MysticMigz</p>
                   </div>
                 </motion.div>
               </Link>
