@@ -34,7 +34,8 @@ const Experience = () => {
         "Provided ongoing maintenance and support for deployed applications"
       ],
       tech: ["React", "Node.js", "JavaScript", "PHP", "MySQL", "WordPress", "Figma"],
-      type: "Contract"
+      type: "Contract",
+      image: "/images/freelance-software-developer-thumbnail.webp"
     }
   ];
 

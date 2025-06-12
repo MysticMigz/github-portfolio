@@ -66,12 +66,6 @@ const Projects = () => {
       description: "An intelligent game environment featuring AI-driven gameplay mechanics, adaptive difficulty systems, and machine learning algorithms. Demonstrates advanced AI implementation in interactive gaming scenarios with real-time decision making and player behavior analysis.",
       tech: ["Python", "TensorFlow", "Unity", "C#", "Machine Learning", "Neural Networks"],
       status: "ACTIVE"
-    },
-    {
-      title: "Cyber Security Suite",
-      description: "Comprehensive security monitoring tool with real-time threat detection.",
-      tech: ["Python", "React", "MongoDB", "Machine Learning"],
-      status: "BETA"
     }
   ];
 
