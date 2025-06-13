@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Rajdhani } from "next/font/google";
 import "./globals.css";
 
@@ -13,15 +13,22 @@ export const metadata: Metadata = {
   description: "A futuristic cyberpunk-themed portfolio showcasing my work and skills",
 };
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  viewportFit: 'cover',
+};
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${rajdhani.className} bg-cyber-dark`}>
-        <div className="cyber-grid-bg min-h-screen">
+    <html lang="en" className="scroll-smooth">
+      <body className={`${rajdhani.className} bg-cyber-dark antialiased`}>
+        <div className="cyber-grid-bg min-h-screen w-full overflow-x-hidden">
           {children}
         </div>
       </body>
