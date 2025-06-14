@@ -26,7 +26,7 @@ const About = () => {
           >
             <h3 className="text-3xl font-bold text-cyber-blue mb-4">Digital Architect / Software Engineer</h3>
             <p className="text-gray-300 text-lg leading-relaxed">
-              Hi, I'm Miguel Silva — a passionate and detail-driven professional dedicated to building meaningful digital experiences.
+              Hi, I&apos;m Miguel Silva — a passionate and detail-driven professional dedicated to building meaningful digital experiences.
               With a strong foundation in Mobile App Development, e.g., software development, UI/UX design, digital marketing, I specialize in turning complex ideas into clean, functional, and impactful solutions.
               I thrive on solving problems, learning new technologies, and collaborating with others to create work that not only performs well but also inspires.
             </p>

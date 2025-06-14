@@ -182,10 +182,10 @@ const Contact = () => {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-3xl font-bold text-cyber-blue mb-6">Let's Connect</h3>
+              <h3 className="text-3xl font-bold text-cyber-blue mb-6">Let&apos;s Connect</h3>
               <p className="text-gray-300 text-lg leading-relaxed mb-8">
                 Ready to dive into the digital realm together? Whether you have a project 
-                in mind or just want to chat about the future of technology, I'm always 
+                in mind or just want to chat about the future of technology, I&apos;m always 
                 excited to connect with fellow digital pioneers.
               </p>
             </div>
