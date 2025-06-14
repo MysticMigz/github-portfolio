@@ -47,6 +47,12 @@ const Projects = () => {
     '/images/project2/laura.png'
   ];
 
+  const gameAIImages = [
+    '/images/gameai.png',
+    '/images/gameai-top1.png',
+    '/images/gameai-top2.png'
+  ];
+
   const projects = [
     {
       title: "PatchPay Banking Application",
@@ -78,9 +84,10 @@ const Projects = () => {
     },
     {
       title: "Game AI Environment",
-      description: "An intelligent game environment featuring AI-driven gameplay mechanics, adaptive difficulty systems, and machine learning algorithms. Demonstrates advanced AI implementation in interactive gaming scenarios with real-time decision making and player behavior analysis.",
+      description: "An intelligent game environment featuring procedurally generated terrain with AI-driven gameplay mechanics. The environment includes dynamic landscapes with mountains, lakes, and varied terrain types, supporting advanced pathfinding and strategic AI behavior. Built with Unity for realistic 3D visualization and Python for AI algorithms.",
       tech: ["Python", "TensorFlow", "Unity", "C#", "Machine Learning", "Neural Networks"],
-      status: "ACTIVE"
+      status: "ACTIVE",
+      images: gameAIImages
     }
   ];
 
@@ -171,19 +178,34 @@ const Projects = () => {
                       </Link>
                     )}
                     {project.title === "Game AI Environment" && (
-                      <Link 
-                        href="https://youtu.be/uKjFemZoi28"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cyber-button text-xs sm:text-sm w-full sm:w-auto text-center"
-                        style={{
-                          borderColor: '#9900ff',
-                          color: '#9900ff',
-                          boxShadow: '0 0 10px #9900ff',
-                        }}
-                      >
-                        Watch Demo
-                      </Link>
+                      <>
+                        <Link 
+                          href="https://youtu.be/uKjFemZoi28"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cyber-button text-xs sm:text-sm w-full sm:w-auto text-center"
+                          style={{
+                            borderColor: '#9900ff',
+                            color: '#9900ff',
+                            boxShadow: '0 0 10px #9900ff',
+                          }}
+                        >
+                          Watch Demo
+                        </Link>
+                        <Link 
+                          href="/reports/game-ai-report.pdf"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cyber-button text-xs sm:text-sm w-full sm:w-auto text-center"
+                          style={{
+                            borderColor: '#00ff00',
+                            color: '#00ff00',
+                            boxShadow: '0 0 10px #00ff00',
+                          }}
+                        >
+                          View Report
+                        </Link>
+                      </>
                     )}
                   </div>
                 </div>
