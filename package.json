@@ -9,12 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@heroicons/react": "^2.2.0",
     "@hookform/resolvers": "^5.1.1",
     "@react-three/drei": "^10.1.2",
     "@react-three/fiber": "^9.1.2",
     "autoprefixer": "^10.4.21",
-    "emailjs-com": "^3.2.0",
     "framer-motion": "^12.16.0",
     "next": "15.3.3",
     "react": "^19.0.0",

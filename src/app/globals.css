@@ -3,10 +3,11 @@
 @theme {
   --color-cyber-blue: #00fff5;
   --color-cyber-pink: #ff00ff;
-  --color-cyber-yellow: #f7f700;
+  --color-cyber-yellow: #ffff00;
   --color-cyber-purple: #9900ff;
-  --color-cyber-dark: #0a0a0a;
-  --color-cyber-gray: #1a1a1a;
+  --color-cyber-green: #00ff66;
+  --color-cyber-dark: #0a0a0f;
+  --color-cyber-gray: #1a1a1f;
   
   --animate-glitch: glitch 1s infinite;
   --animate-float: float 6s ease-in-out infinite;

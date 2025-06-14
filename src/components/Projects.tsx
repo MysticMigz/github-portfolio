@@ -59,7 +59,7 @@ const Projects = () => {
       title: "Spayce - Entrepeneural Networking Application",
       description: "A dynamic platform designed for entrepreneurs to connect, collaborate, and grow their networks. Features include an AI-powered networking assistant, community hub for business discussions, and smart check-in system for events. Built with scalability and user engagement in mind.",
       tech: ["React", "Node.js", "Appwrite", "REST API", "Tailwind CSS", "OpenAI API"],
-      status: "DEPLOYED",
+      status: "In Development",
       images: spayceImages
     },
     {
@@ -117,6 +117,7 @@ const Projects = () => {
                     <span className={`inline-flex px-2 py-1 text-xs rounded whitespace-nowrap ${
                       project.status === 'ACTIVE' ? 'bg-green-500/20 text-green-400 border border-green-400' :
                       project.status === 'DEPLOYED' ? 'bg-cyber-blue/20 text-cyber-blue border border-cyber-blue' :
+                      project.status === 'In Development' ? 'bg-yellow-500/20 text-yellow-400 border border-yellow-400' :
                       'bg-yellow-500/20 text-yellow-400 border border-yellow-400'
                     }`}>
                       {project.status}
