@@ -48,9 +48,8 @@ const Projects = () => {
   ];
 
   const gameAIImages = [
-    '/images/gameai.png',
-    '/images/gameai-top1.png',
-    '/images/gameai-top2.png'
+    '/images/gameai/terrain-perspective.png',
+    '/images/gameai/terrain-heightmap.png'
   ];
 
   const projects = [

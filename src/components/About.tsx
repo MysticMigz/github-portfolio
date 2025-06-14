@@ -31,9 +31,9 @@ const About = () => {
               I thrive on solving problems, learning new technologies, and collaborating with others to create work that not only performs well but also inspires.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
-              Whether it's developing scalable applications, designing intuitive interfaces, or crafting effective strategies, 
+              Whether it&apos;s developing scalable applications, designing intuitive interfaces, or crafting effective strategies, 
               I bring creativity, precision, and a deep commitment to quality to everything I do.
-              Let's connect and create something remarkable together!
+              Let&apos;s connect and create something remarkable together!
             </p>
             <div className="flex flex-wrap gap-4">
               <span className="px-4 py-2 bg-cyber-dark border border-cyber-blue text-cyber-blue text-sm">
