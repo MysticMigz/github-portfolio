@@ -183,9 +183,11 @@ const Experience = () => {
           <p className="text-gray-300 text-lg mb-8">
             Ready to add your expertise to my team?
           </p>
-          <button className="cyber-button">
-            Let&apos;s Connect
-          </button>
+          <Link href="#contact">
+            <button className="cyber-button">
+              Let&apos;s Connect
+            </button>
+          </Link>
         </motion.div>
       </div>
     </section>

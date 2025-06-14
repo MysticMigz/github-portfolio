@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import HeroVideo from './HeroVideo';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -45,19 +46,26 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
         >
-          <button className="cyber-button w-full sm:w-auto min-w-[200px]">
-            View Projects
-          </button>
-          <button 
-            className="cyber-button w-full sm:w-auto min-w-[200px]"
-            style={{
-              borderColor: '#ff00ff',
-              color: '#ff00ff',
-              boxShadow: '0 0 10px #ff00ff',
-            }}
+          <Link href="#projects" className="w-full sm:w-auto min-w-[200px]">
+            <button className="cyber-button w-full">
+              View Projects
+            </button>
+          </Link>
+          <Link 
+            href="#contact" 
+            className="w-full sm:w-auto min-w-[200px]"
           >
-            Contact Me
-          </button>
+            <button 
+              className="cyber-button w-full"
+              style={{
+                borderColor: '#ff00ff',
+                color: '#ff00ff',
+                boxShadow: '0 0 10px #ff00ff',
+              }}
+            >
+              Contact Me
+            </button>
+          </Link>
         </motion.div>
       </div>
 
