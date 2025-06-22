@@ -41,6 +41,14 @@ const Contact = () => {
     }
   }, []);
 
+  // Add debug info for Vercel troubleshooting
+  const debugInfo = {
+    publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY ? 'SET' : 'MISSING',
+    serviceId: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ? 'SET' : 'MISSING',
+    templateId: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ? 'SET' : 'MISSING',
+    environment: process.env.NODE_ENV || 'unknown'
+  };
+
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
