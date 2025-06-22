@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Rajdhani } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 
 const rajdhani = Rajdhani({
   weight: ["300", "400", "500", "600", "700"],
@@ -31,6 +32,7 @@ export default function RootLayout({
         <div className="cyber-grid-bg min-h-screen w-full overflow-x-hidden">
           {children}
         </div>
+        <Analytics />
       </body>
     </html>
   );
