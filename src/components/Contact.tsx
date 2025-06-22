@@ -41,13 +41,7 @@ const Contact = () => {
     }
   }, []);
 
-  // Add debug info for Vercel troubleshooting
-  const debugInfo = {
-    publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY ? 'SET' : 'MISSING',
-    serviceId: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ? 'SET' : 'MISSING',
-    templateId: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ? 'SET' : 'MISSING',
-    environment: process.env.NODE_ENV || 'unknown'
-  };
+
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -293,15 +287,6 @@ const Contact = () => {
             className="bg-cyber-dark/80 border-2 border-cyber-blue/50 rounded-lg p-8 backdrop-blur-sm"
           >
             <h3 className="text-2xl font-bold text-cyber-blue mb-6">Send Message</h3>
-            
-            {/* Temporary Debug Info - Remove after fixing */}
-            <div className="mb-4 p-3 bg-cyber-gray/50 border border-cyber-yellow/50 rounded text-sm">
-              <p className="text-cyber-yellow font-semibold mb-2">Debug Info (Remove after fixing):</p>
-              <p>Public Key: <span className={debugInfo.publicKey === 'SET' ? 'text-green-400' : 'text-red-400'}>{debugInfo.publicKey}</span></p>
-              <p>Service ID: <span className={debugInfo.serviceId === 'SET' ? 'text-green-400' : 'text-red-400'}>{debugInfo.serviceId}</span></p>
-              <p>Template ID: <span className={debugInfo.templateId === 'SET' ? 'text-green-400' : 'text-red-400'}>{debugInfo.templateId}</span></p>
-              <p>Environment: <span className="text-cyber-blue">{debugInfo.environment}</span></p>
-            </div>
             
             <form ref={formRef} className="space-y-6" onSubmit={handleSubmit}>
               {(Object.keys(CONTACT_FORM.FIELDS) as Array<keyof typeof CONTACT_FORM.FIELDS>).map(renderField)}
