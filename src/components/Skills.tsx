@@ -26,7 +26,6 @@ const Skills = () => {
       title: "DevOps & Tools",
       skills: [
         { name: "Kotlin", level: 80 },
-        { name: "AWS", level: 75 },
         { name: "Git", level: 95 },
         { name: "Linux", level: 85 },
         { name: "CI/CD", level: 80 }
@@ -97,7 +96,7 @@ const Skills = () => {
         >
           <h3 className="text-2xl font-bold text-sky-400 mb-8">Tech Stack</h3>
           <div className="flex flex-wrap justify-center gap-6">
-            {['React', 'Next.js', 'Node.js', 'Python', 'TypeScript', 'AWS', 'Docker', 'PostgreSQL'].map((tech, index) => (
+            {['React', 'Next.js', 'Node.js', 'Python', 'TypeScript', 'PostgreSQL'].map((tech, index) => (
               <motion.div
                 key={index}
                 whileHover={{ scale: 1.1, rotate: 5 }}

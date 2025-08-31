@@ -3,6 +3,20 @@ import Carousel from './Carousel';
 import Link from 'next/link';
 
 const Projects = () => {
+  const mrShirtImages = [
+    '/images/ecommerce/Ecom-Portfolio.png',
+    '/images/ecommerce/ecom1.png',
+    '/images/ecommerce/ecom2.png',
+    '/images/ecommerce/ecom3.png',
+    '/images/ecommerce/ecom4.png',
+    '/images/ecommerce/ecom5.png',
+    '/images/ecommerce/ecom6.png',
+    '/images/ecommerce/ecom7.png',
+    '/images/ecommerce/ecom8.png',
+    '/images/ecommerce/ecom9.png',
+    '/images/ecommerce/ecom10.png'
+  ];
+
   const patchPayImages = [
     '/images/project1/Screenshot 2025-05-04 114222.png',
     '/images/project1/Screenshot 2025-05-04 114239.png',
@@ -40,7 +54,8 @@ const Projects = () => {
     '/images/spayce/login.png',
     '/images/spayce/checkin.png',
     '/images/spayce/networkhub.png',
-    '/images/spayce/integratedaichatbot.png'
+    '/images/spayce/aimatchmaking.png',
+    '/images/spayce/profile.png'
   ];
 
   const lauraEmpowerFitImages = [
@@ -54,6 +69,13 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "Deployment of Ecommerce Platform",
+      description: "Built a production-ready custom apparel e-commerce solution covering the full business workflow (design → payment → production → shipping). Developed Next.js 14 + TypeScript frontend with Tailwind CSS and custom product design tool. Integrated Stripe payments, persistent cart, voucher system, and VAT/tax support. Implemented MongoDB/Mongoose backend with NextAuth.js authentication and Cloudinary file storage. Built admin dashboard with role-based access, sales analytics, inventory & order management. Automated order processing & shipping with barcode scanning, PDF invoices/labels, and multi-courier support. Applied security best practices, performance optimizations, and SEO enhancements.",
+      tech: ["Next.js 14", "TypeScript", "Tailwind CSS", "Stripe", "MongoDB", "Mongoose", "NextAuth.js", "Cloudinary", "Admin Dashboard", "Order Management"],
+      status: "DEPLOYED",
+      images: mrShirtImages
+    },
+    {
       title: "PatchPay Banking Application",
       description: "A modern banking platform with REST API integration, featuring Squad Gateway for payments and robust email verification. Built with security and user experience in mind.",
       tech: ["React", "Node.js", "REST API", "Squad Gateway", "JWT", "PostgreSQL"],
@@ -62,8 +84,8 @@ const Projects = () => {
     },
     {
       title: "Spayce - Entrepeneural Networking Application",
-      description: "A dynamic platform designed for entrepreneurs to connect, collaborate, and grow their networks. Features include an AI-powered networking assistant, community hub for business discussions, and smart check-in system for events. Built with scalability and user engagement in mind.",
-      tech: ["React", "Node.js", "Appwrite", "REST API", "Tailwind CSS", "OpenAI API"],
+      description: "A dynamic platform designed for entrepreneurs to connect, collaborate, and grow their networks. Features include AI-assisted matchmaking for finding perfect business connections, comprehensive user profiles with professional networking tools, AI-powered networking assistant, community hub for business discussions, and smart check-in system for events. The platform leverages machine learning to suggest relevant connections based on industry, location, and expertise. Built with scalability and user engagement in mind.",
+      tech: ["React", "Node.js", "Appwrite", "REST API", "Tailwind CSS", "OpenAI API", "AI Matchmaking", "Machine Learning"],
       status: "In Development",
       images: spayceImages
     },
