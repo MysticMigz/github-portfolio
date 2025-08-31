@@ -58,10 +58,6 @@ const Projects = () => {
     '/images/spayce/profile.png'
   ];
 
-  const lauraEmpowerFitImages = [
-    '/images/project2/laura.png'
-  ];
-
   const gameAIImages = [
     '/images/gameai/terrain-perspective.png',
     '/images/gameai/terrain-heightmap.png'
@@ -88,13 +84,6 @@ const Projects = () => {
       tech: ["React", "Node.js", "Appwrite", "REST API", "Tailwind CSS", "OpenAI API", "AI Matchmaking", "Machine Learning"],
       status: "In Development",
       images: spayceImages
-    },
-    {
-      title: "Laura Empower Fit",
-      description: "A modern fitness and personal training website featuring responsive design, interactive carousel components, and professional branding. Built with clean UI/UX principles for optimal user engagement.",
-      tech: ["React", "Next.js", "Tailwind CSS", "Responsive Design", "UI/UX"],
-      status: "DEPLOYED",
-      images: lauraEmpowerFitImages
     },
     {
       title: "Flag Game",
